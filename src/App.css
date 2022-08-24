@@ -127,7 +127,7 @@ form div {
   margin-top: 10px;
 }
 
-form div input{
+form div input, form div textarea{
   width: 100%;
   padding: 10px;
   border: 1px solid gray;
@@ -156,4 +156,15 @@ form button{
 
 .error_container a{
   color: black;
+}
+
+.dashboard_container{
+  width: 100%;
+  height: 85vh;
+}
+
+.dashboard_wrapper{
+  width: 90%;
+  margin: 0px auto;
+  height: 100%;
 }
