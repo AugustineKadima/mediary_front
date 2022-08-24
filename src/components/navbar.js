@@ -9,7 +9,7 @@ export default function NavBar(){
                 <NavLink to="/"><h2>Mediary</h2></NavLink>
                 <div className="nav_buttons_wrapper">
                    <NavLink to="/signup"> <button id="signup_btn">Sign Up</button></NavLink>
-                    <button id="login_btn">Login</button>
+                    <NavLink to="/login"><button id="login_btn">Login</button></NavLink>
                 </div>
             </div>
 
