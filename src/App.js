@@ -5,6 +5,7 @@ import LandingPage from './components/landing';
 import Login from './components/login';
 import SignUp from './components/signup';
 import Dashboard from './components/dashboard';
+import ErrorPage from './components/error_page';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='*' element={<ErrorPage />} />
       </Routes>
      
     </div>

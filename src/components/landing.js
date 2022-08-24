@@ -1,5 +1,6 @@
 import React from "react";
 import{ IoMdArrowForward} from 'react-icons/io'
+import { NavLink } from "react-router-dom";
 
 export default function LandingPage(){
     return (
@@ -10,11 +11,11 @@ export default function LandingPage(){
                 an online diary that allows you to document experiences in a secure while their quality remains the same
                 </p>
 
-                <button id="get_started_button">Get Started &nbsp; <IoMdArrowForward /></button>
+                <NavLink to="/signup"><button id="get_started_button">Get Started &nbsp; <IoMdArrowForward /></button></NavLink>
 
             </div>
             <div className="landing_image_wrapper">
-                <img src="../mediary_landing.png"/>
+                <img src="../mediary_landing.png" alt="diary"/>
             </div>
 
         </div>

@@ -143,3 +143,17 @@ form button{
   border-radius: 8px;
   box-shadow: 0px 0px 2px gray;
 }
+
+.error_container{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+.error_container a{
+  color: black;
+}
