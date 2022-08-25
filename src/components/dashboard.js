@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import DiaryItem from "./diary_item";
+
+
 
 export default function Dashboard(){
+    
+    const [diaries, setdiaries] = useState([])
+
+    useEffect(() => {
+        setdiaries([1,2,3,4,6,7,7,8,9,9,9])
+    }, [])
     return (
         <div className="dashboard_container">
 
@@ -21,6 +30,14 @@ export default function Dashboard(){
                 <button>Add To Diary</button>
             
             </form>
+
+            <div className="diaries_container">
+
+
+                {diaries.map( (diary) => {
+                    return <DiaryItem  diary={diary}/>
+                })}
+            </div>
             </div>
 
         </div>
